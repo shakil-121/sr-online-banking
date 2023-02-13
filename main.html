@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>bank Main Page</title>
+</head>
+<body class="bg-neutral-900"> 
+    <h1 style="font-family: 'Righteous', cursive;" class="text-3xl mt-10 text-center text-white" >Your Online Banking Account Dashboard</h1>  
+     
+    <section class="mx-auto grid grid-cols-3 gap-4 w-9/12 mt-10">
+        <div class="bg-lime-500 p-6 rounded-lg font-bold text-white text-2xl">
+           <h1>Deposite</h1> 
+           <h1>$<span id="deposite-total">00</span></h1>
+        </div>
+        <div class="bg-indigo-700 p-6 rounded-lg font-bold text-white text-2xl">
+           <h1>Withdraw</h1> 
+           <h1>$<span id="privious-withdrawAmount">00</span></h1>
+        </div>
+        <div class="bg-pink-700 p-6 rounded-lg font-bold text-white text-2xl">
+           <h1>Total Balance</h1> 
+           <h1>$<span id="total-balance">2000</span></h1>
+        </div>
+    </section> 
+
+    <section class="mx-auto grid grid-cols-2 gap-4 w-9/12 mt-10">
+
+        <div class="bg-lime-500 p-6 rounded-lg ">
+           <h1 class="font-bold text-white text-2xl mb-2">Your Deposite</h1> 
+
+           <input id="deposite-input" class="bg-white w-9/12 p-2 rounded " placeholder="Amount You want to deposite" type="text">
+
+
+           <button id="diposite-btn" class="bg-pink-600 rounded px-4 py-2 text-white semibold">Deposite</button>
+
+        </div>
+
+
+        
+        <div class="bg-indigo-700 p-6 rounded-lg ">
+           <h1 class="font-bold text-white text-2xl mb-2">Your Withdraw</h1> 
+
+           <input id="withdraw-fild" class="bg-white w-9/12 p-2 rounded " placeholder="Amount You want to deposite" type="text">
+
+           <button id="withdraw-btn" class="bg-pink-600 rounded px-4 py-2 text-white semibold">Withdraw</button>
+        </div>
+        
+    </section> 
+
+    <script src="js/deposite.js"></script>
+</body>
+</html>
